@@ -48,6 +48,7 @@ nav img{
     border:none;
     border-radius: 30px;
     color:white;
+    cursor: pointer;
 }
 .mastercraft{
     position: relative;
@@ -404,5 +405,9 @@ hr{
     .aboutmodal{
         bottom: 200px;
         left: 200px;
+    }
+    .modal-container{
+        top: 60px;
+        left: 100px;
     }
 }
