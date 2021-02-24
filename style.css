@@ -93,6 +93,7 @@ nav img{
     font-size: 20px;
     background: transparent;
     border:none;
+    cursor:pointer;
 }
 .fa-close{
     color:black;
