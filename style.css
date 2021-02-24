@@ -1,0 +1,407 @@
+*{
+    box-sizing: border-box; 
+    margin:0;
+    padding:0;
+}
+nav::after{
+    content: '';
+    background: url('./images/image-hero-mobile.jpg');
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+   
+}
+nav img{
+    padding: 10px;
+}
+.backproject{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    margin: 150px 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.projectcontainer > div{
+    margin: 10px 20px;
+    position: relative;
+    top:-10px;
+}
+.projectbutton {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.projectbutton button{
+    padding: 15px 10px;
+    background: hsl(176,50%,47%);
+    border:none;
+    border-radius: 30px;
+    color:white;
+}
+.mastercraft{
+    position: relative;
+    top:-30px;
+}
+.bookmark2{
+  visibility: hidden;
+  display:none;
+}
+.modal-container{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+    width: 100%;
+    margin-top: 10px;
+    padding:auto 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    overflow-y: scroll;
+    background: white;
+    z-index: 1;
+}
+.modal-container.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+.modal{
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+}
+#close{
+    position: absolute;
+    top:10px;
+    right:10px;
+    font-size: 20px;
+    background: transparent;
+    border:none;
+}
+.fa-close{
+    color:black;
+}
+.card{
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border:1px solid grey;
+}
+.card p {
+    margin-top: 10px;
+}
+.reward{
+    display:none;
+}
+.noreward{
+    margin-top: 10px;
+    position: relative;
+    left: 60%;
+}
+input{
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+.bamboo{
+    margin:10px;
+    display: flex;
+    justify-content: space-between;
+}
+.lastcard{
+    opacity: 0.5;
+}
+#noreward{
+    padding: 10px 30px;
+    border:none;
+    background:hsl(176,50%,47%);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.modalcontainer2{
+    background:whitesmoke;
+    margin: 0 10px;
+    padding: 0  30px;
+    opacity: 0;
+    position: fixed;
+    pointer-events: none;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1;
+}
+.modalcontainer2.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+#closereward{
+    padding: 10px 20px;
+}
+.fa-check{
+background: lightblue;
+border-radius: 50px;
+padding: 20px;
+font-size: 30px;
+color:white;
+}
+.modalcontainer2 > div {
+    margin:10px;
+}
+#bamboo{
+    padding: 10px;
+    border:none;
+    background:hsl(176,50%,47%);
+    border-radius: 20px;
+    cursor: pointer;
+}
+#blackedition{
+    padding: 10px;
+    border:none;
+    background:hsl(176,50%,47%);
+    border-radius: 20px;
+    cursor: pointer;
+}
+#closereward{
+    border-radius: 20px;
+    border:none;
+    background: hsl(176,50%,47%);
+}
+.pledgetracker{
+    background: whitesmoke;
+    text-align: center;
+    margin: 0 20px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 100px;
+    padding-bottom: 10px;
+}
+.tracker > div{
+padding-top: 10px;
+}
+.barcontainer{
+    margin: 0 10px;
+}
+.progressbar{
+    background:grey;
+    height: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.bar{
+    height: 10px;
+    border-radius: 20px;
+}
+.lastsection{
+    margin:auto 20px;
+    background:whitesmoke;
+    border-radius: 5px;
+}
+.about{
+    padding: 20px;
+}
+.about > div{
+    margin-top: 20px;
+}
+.aboutcard{
+    padding: 20px;
+}
+.aboutcard > .card2{
+    margin-top: 20px;
+}
+.abouth1{
+    font-size: 10px;
+}
+.card2{
+    border: 2px solid lightgrey;
+    padding: 20px;
+    border-radius: 5px;
+}
+.card2 > div{
+    margin-top: 10px;
+}
+.card2 button{
+    padding: 10px;
+    border-radius: 20px;
+    border:none;
+    background: hsl(176,50%,47%);
+}
+.card2 span{
+    color: hsl(176,50%,47%);
+}
+.aboutlastcard{
+    opacity: 0.5;
+}
+.displayflex > div{
+    margin-top: 10px;
+}
+.aboutmodal{
+    background:whitesmoke;
+    position: fixed;
+    opacity: 0;
+    bottom: 50px;
+    padding: 30px;
+    margin: 50px;
+    pointer-events: none;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px 2px grey;;
+}
+.aboutmodal.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+.aboutmodal > div{
+    margin: 10px;
+}
+.aboutmodal button{
+padding:10px 30px;
+border-radius: 20px;
+background: hsl(176,50%,47%);
+border:none;
+}
+@media screen and (max-width:800px){
+ul{
+    background-color: whitesmoke;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    flex-direction: column;
+    text-align: center;
+    top: 80px;
+    width: 80%;
+    left: 10%;
+    transform: translate(120%);
+    list-style: none;
+    Z-index:1;
+}
+ul li{
+    margin: 20px;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.hamburger{
+    display: block;
+    padding: 10px;
+    background: transparent;
+    border:none;
+    font-size: 20px;
+    color:white;
+}
+nav ul.show{
+    transform: translate(0);
+}
+}
+@media screen and (min-width: 700px) and (max-width: 800px){
+    .backproject{
+        margin-top: 500px;
+    }
+}
+@media screen and (min-width: 801px){
+   nav::after{
+background: url('./images/image-hero-desktop.jpg');
+background-size: contain;
+background-repeat: no-repeat;
+   }
+.hamburger{
+    display: none;
+}
+nav img{
+    margin: 20px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin: 30px;
+    margin-right: 200px;
+}
+li{
+    padding: 0 10px;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+}
+.backproject{
+margin-left: 25%;
+width: 50%;
+}
+.singlebookmark{
+    display:none;
+}
+.bookmark2{
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    background: silver;
+    margin-left: 50px;
+    border-radius: 30px;
+    padding-right: 20px;
+}
+.bookmark2 > div{
+    margin-right: 10px;
+}
+.projectbutton button{
+    padding: 20px 20px;
+}
+.modal-container{
+   width: 50%;
+    margin-left: 20%;
+}
+.modalcontainer2{
+width: 40%;
+}
+.pledgetracker{
+    width: 80%;
+    position: relative;
+    left: 70px;
+    margin: 0 10px;
+}
+.tracker{
+    display:flex;
+    justify-content: space-between;
+}
+.tracker > .h1, .p{
+    margin: 0 100px;
+}
+hr{
+    display:none;
+}
+.tracker > div{
+    border-left: 2px solid grey;
+}
+.lastsection{
+    margin: 50px;
+}
+.abouth1{
+    font-size: 20px;
+}
+.displayflex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+}
+@media screen and (min-width:1440px){
+    .aboutmodal{
+        bottom: 200px;
+        left: 200px;
+    }
+}
