@@ -67,6 +67,13 @@ if(i <= 0){
     bar.style.backgroundColor = 'hsl(176,50%,47%)';
     backer.innerHTML = count;
     }
+    
+    var a = parseInt(document.getElementById('text1').value);
+var b = parseInt(document.getElementById('text2').value);
+
+
+
+document.getElementById('totalprice').innerHTML = a + b;
 });
 
 
@@ -87,6 +94,13 @@ if(z <= 0){
        z--;
     }
     blackleft1.innerHTML = z;
+    
+    var a = parseInt(document.getElementById('text1').value);
+var b = parseInt(document.getElementById('text2').value);
+
+
+
+document.getElementById('totalprice').innerHTML = a + b;
 });
 
 
