@@ -118,23 +118,6 @@ function show3(){
     document.getElementById('card2').style.border = "1px solid grey";
 }
 
-//about modal
-const aboutModal = document.getElementById('aboutModal');
-const aboutbutton = document.getElementById('aboutbutton');
-const closeModal = document.getElementById('closemodal');
-const blackbtn = document.getElementById('blackeditionbtn');
-
-aboutbutton.addEventListener('click', () => {
-aboutModal.classList.add('show'); 
-});
-
-closeModal.addEventListener('click', ()=> {
-aboutModal.classList.remove('show');
-});
-
-blackbtn.addEventListener('click', () => {
-aboutModal.classList.add('show');
-});
 
 //progress bar on count
 const aboutbtn = document.getElementById('aboutbutton');
@@ -146,6 +129,7 @@ const blackstand = document.getElementById('blackeditionbtn');
 
 //progress count when user clicks on the selected reward
 aboutbtn.addEventListener('click', () => {
+     modalcontainer.classList.add('show');
    if(count === 100){
         count = 100;
     }else{
@@ -164,6 +148,7 @@ bambooleft.innerHTML = i;
 });
 
 blackstand.addEventListener('click', () => {
+     modalcontainer.classList.add('show');
 if(count === 100){
     count = 100;
 }else{
