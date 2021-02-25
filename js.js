@@ -35,7 +35,7 @@ noreward.addEventListener('click', () => {
     }else{
         count++;
         bar.style.width = count + '%';
-        bar.style.backgroundColor = 'green';
+        bar.style.backgroundColor = 'hsl(176,50%,47%)';
         backer.innerHTML = count;
     }
 });
@@ -64,7 +64,7 @@ if(i <= 0){
     }else{
         count++;
     bar.style.width = count + '%' ;
-    bar.style.backgroundColor = 'green';
+    bar.style.backgroundColor = 'hsl(176,50%,47%)';
     backer.innerHTML = count;
     }
 });
@@ -78,7 +78,7 @@ if(count === 100){
     count++;
 }
 bar.style.width = count + '%';
-bar.style.backgroundColor = 'green';
+bar.style.backgroundColor = 'hsl(176,50%,47%)';
 backer.innerHTML = count;
 
 if(z <= 0){
@@ -135,7 +135,7 @@ aboutbtn.addEventListener('click', () => {
     }else{
         count++;
     bar.style.width = count + '%' ;//progress bar will start to count 
-    bar.style.backgroundColor = 'green';//progressbar background color set 
+    bar.style.backgroundColor = 'hsl(176,50%,47%)';//progressbar background color set 
     backer.innerHTML = count;//the user will able to see thier how many backers they have got so far.
     }
 
@@ -154,7 +154,7 @@ if(count === 100){
 }else{
     count++;
     bar.style.width = count + '%';
-bar.style.backgroundColor = 'green';
+bar.style.backgroundColor = 'hsl(176,50%,47%)';
 backer.innerHTML = count;
 }
 
