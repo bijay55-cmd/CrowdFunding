@@ -135,49 +135,16 @@ function show3(){
 
 //progress bar on count
 const aboutbtn = document.getElementById('aboutbutton');
-const bambooleft = document.getElementById('bambooleft');
-const bar = document.getElementById('bar');
-const backer = document.getElementById('backer');
-const backleft = document.getElementById('backleft');
 const blackstand = document.getElementById('blackeditionbtn');
 
 //progress count when user clicks on the selected reward
 aboutbtn.addEventListener('click', () => {
-     modalcontainer.classList.add('show');
-   if(count === 100){
-        count = 100;
-    }else{
-        count++;
-    bar.style.width = count + '%' ;//progress bar will start to count 
-    bar.style.backgroundColor = 'hsl(176,50%,47%)';//progressbar background color set 
-    backer.innerHTML = count;//the user will able to see thier how many backers they have got so far.
-    }
-
-    if(i <= 0){
-i = 0;
-}else{
-   i--;
-}
-bambooleft.innerHTML = i;
+    modalcontainer.classList.add('show');
+  
 });
 
 blackstand.addEventListener('click', () => {
-     modalcontainer.classList.add('show');
-if(count === 100){
-    count = 100;
-}else{
-    count++;
-    bar.style.width = count + '%';
-bar.style.backgroundColor = 'hsl(176,50%,47%)';
-backer.innerHTML = count;
-}
-
-if(z <= 0){
-    z = 0;
-    }else{
-       z--;
-    }
-    blackleft.innerHTML = z;
+    modalcontainer.classList.add('show');
 });
 
 
