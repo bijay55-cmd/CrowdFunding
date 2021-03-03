@@ -137,9 +137,11 @@ input{
 }
 .modalcontainer2{
     background:whitesmoke;
-    margin: 0 10px;
+    margin:auto;
     padding: 0  30px;
     opacity: 0;
+    top:20%;
+    left:0;
     position: fixed;
     pointer-events: none;
     border-radius: 10px;
@@ -436,8 +438,11 @@ hr{
         left: 200px;
     }
     .modal-container{
-        top: 60px;
-        left: 100px;
+        top:5%;
+        left:0;
+    }
+    .modalcontainer2{
+        left:30%;
     }
     .pledgetracker{
         width: 750px;
